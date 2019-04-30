@@ -66,3 +66,4 @@ Modificar el método `comprar(cosa)` para que además de lo que esté haciendo, 
 
 
 
+prueba
