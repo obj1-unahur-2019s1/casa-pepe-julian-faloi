@@ -1,0 +1,20 @@
+import casa.*
+import cosas.*
+
+test "puede comprar cosas" {
+	casaDePepeYJulian.comprar(heladera)
+	casaDePepeYJulian.comprar(cama)
+	assert.equals([heladera, cama], casaDePepeYJulian.cosas())
+}
+
+test "sabe cuantas cosas compró" {
+	casaDePepeYJulian.comprar(heladera)
+	casaDePepeYJulian.comprar(cama)
+	assert.equals(2, casaDePepeYJulian.cantidadDeCosasCompradas())
+}
+
+test "sabe si compró comida" {
+	casaDePepeYJulian.comprar(tiraDeAsado)
+	casaDePepeYJulian.comprar(cama)
+	assert.equals(true, casaDePepeYJulian.tieneComida())
+}
